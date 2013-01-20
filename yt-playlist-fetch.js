@@ -16,7 +16,7 @@ function viewPlaylist(playlist) {
             .append(' (' + playlist + ')\n')
             .append('# ' + escapeHTML(name) + '\n\n')
             .append('xargs -n1 -P4 youtube-dl -t &lt;&lt;EOF\n');
-        $xml.find('player').each(function() {
+        $xml.find('player, media\\:player').each(function() {
             $script.append($(this).attr('url').match(/(^.+)&/)[1] + '\n');
         });
         $script.append('EOF');
