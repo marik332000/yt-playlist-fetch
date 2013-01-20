@@ -1,0 +1,29 @@
+body {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background: lightgray;
+    font-family: sans;
+}
+
+.input {
+    text-align: center;
+}
+
+.output {
+    border: 2px dotted black;
+    border-radius: 5px;
+    background: white;
+    padding: 10px 15px;
+    margin: 15px 0;
+}
+
+pre {
+    margin: 0;
+    padding: 0;
+}
+
+#download {
+    float: right;
+    font-weight: bold;
+}
